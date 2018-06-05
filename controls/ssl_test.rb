@@ -77,7 +77,7 @@ end
 control 'tls1.0' do
   title 'Disable TLS 1.0 on exposed ports.'
 
-  desc 'Edit /etc/nginx/nginx.conf config and disable TLSv1.0.  Then run sudo service nginx restart.  
+  desc 'Action: Edit /etc/nginx/nginx.conf config and disable TLSv1.0.  Then run sudo service nginx restart.  
 
   Rationale: Sensitive data, from credit card numbers to patient health information to social networking details, need protection when transmitted across an insecure network, so administrators employ protocols that reduce the risk of that data being intercepted and used maliciously. TLS, a standard specified by the Internet Engineering Task Force, defines the method by which client and server computers establish a secure connection with one another to protect data that is passed back and forth. TLS is used by a wide variety of everyday applications, including email, secure web browsing, instant messaging and voice-over-IP (VOIP).  The Internet Engineering Task Force found vulnerabilities in TLS 1.0, one of the most widely used protocols, and updated it to TLS 1.1 and then TLS 1.2 to resolve many of these security issues.  In order to mitigate these vulnerabilities and conform to our own recommendations, NIST recommends TLS 1.2 for connections.'
 
@@ -101,7 +101,7 @@ control 'tls1.1' do
 
   impact 1.0
   title 'Disable TLS 1.1 on exposed ports'
-  desc 'Edit /etc/nginx/nginx.conf config and disable TLSv1.0.  Then run sudo service nginx restart.  
+  desc 'Action: Edit /etc/nginx/nginx.conf config and disable TLSv1.1.  Then run sudo service nginx restart.  
 
   Rationale: Sensitive data, from credit card numbers to patient health information to social networking details, need protection when transmitted across an insecure network, so administrators employ protocols that reduce the risk of that data being intercepted and used maliciously. TLS, a standard specified by the Internet Engineering Task Force, defines the method by which client and server computers establish a secure connection with one another to protect data that is passed back and forth. TLS is used by a wide variety of everyday applications, including email, secure web browsing, instant messaging and voice-over-IP (VOIP).  The Internet Engineering Task Force found vulnerabilities in TLS 1.0, one of the most widely used protocols, and updated it to TLS 1.1 and then TLS 1.2 to resolve many of these security issues.  In order to mitigate these vulnerabilities and conform to our own recommendations, NIST recommends TLS 1.2 for connections.'
 
